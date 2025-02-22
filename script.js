@@ -82,7 +82,7 @@ const links = [
         title: "CapCut", 
         url: "https://www.capcut.com/pt-br/login?enter_from=log_out&current_page=work_space", 
         category: "ferramentas", 
-        description: "O CapCut é um aplicativo de edição de vídeos gratuito e intuitivo, desenvolvido pela ByteDance, a mesma empresa por trás do TikTok. Disponível para dispositivos móveis e desktop, o CapCut oferece uma ampla gama de ferramentas para criar vídeos profissionais e criativos, incluindo cortes, transições, efeitos especiais, filtros, ajustes de velocidade, adição de textos e trilhas sonoras. A plataforma também permite a edição em multicamadas, chroma key (tela verde) e a integração com músicas e efeitos de áudio diretamente da biblioteca do TikTok." 
+        description: "O CapCut é um aplicativo de edição de vídeos gratuito e intuitivo." 
     }
 ];
 
