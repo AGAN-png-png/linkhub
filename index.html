@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Cabeçalho -->
+        <div class="header">
+            <div class="header-content">
+                <h1>Links Hub</h1>
+                <button id="themeToggle" aria-label="Alternar tema">🌙</button>
+            </div>
+            <p>
+                Bem-vindo ao Links Hub! Aqui você encontra uma coleção de ferramentas e recursos online 
+                para facilitar seu dia a dia. Use a barra de busca para encontrar links específicos ou filtre por 
+                categorias. Todos os links são organizados para você acessar de forma rápida e prática.
+            </p>
+        </div>
+        
+        <!-- Controles (Busca e Filtros) -->
+        <div class="controls">
+            <div class="search-container">
+                <input type="text" id="searchBar" placeholder="Qual serviço você procura?">
+                <button id="searchButton">🔍</button>
+            </div>
+            
+            <div class="filter-container">
+                <button class="filter-button active" data-category="all">Todos</button>
+                <button class="filter-button" data-category="tecnologia">Tecnologia</button>
+                <button class="filter-button" data-category="educacao">Educação</button>
+                <button class="filter-button" data-category="ferramentas">Ferramentas</button>
+                <button class="filter-button" data-category="design">Design</button>
+                <button class="filter-button" data-category="financas">Finanças</button>
+            </div>
+        </div>
+
+        <!-- Resultados -->
+        <div id="results" class="results-container"></div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
