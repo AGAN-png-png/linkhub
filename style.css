@@ -54,24 +54,26 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px; /* Espaço entre o título e a barra de alternância */
+    gap: 15px;
     margin-bottom: 15px;
 }
 
 h1 {
     font-size: 2.5rem;
     color: var(--text-color);
-    margin: 0; /* Remove margem padrão */
+    margin: 0;
+    text-align: center; /* Centraliza o título h1 */
 }
 
 /* Texto explicativo */
 .header p {
     font-size: 1rem;
     color: var(--text-color);
-    opacity: 0.8; /* Texto mais suave */
+    opacity: 0.8;
     max-width: 800px;
-    margin: 0 auto 20px; /* Centraliza o texto e adiciona espaçamento */
+    margin: 0 auto 20px;
     line-height: 1.6;
+    text-align: center; /* Centraliza o parágrafo */
 }
 
 /* Botão de alternância de tema */
@@ -87,6 +89,110 @@ h1 {
     transform: scale(1.1);
 }
 
+/* Abas */
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    padding: 10px 20px;
+    border: none;
+    background: var(--card-background);
+    color: var(--text-color);
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.tab-button.active {
+    background: var(--button-background);
+    color: var(--button-text);
+}
+
+.tab-button:hover {
+    background: var(--button-hover-background);
+    color: var(--button-hover-text);
+}
+
+/* Conteúdo das Abas */
+.tab-content {
+    display: none;
+    padding: 30px;
+    background: var(--card-background);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Estilos específicos para a aba "Fontes Acadêmicas" */
+#fontes-pesquisa h2 {
+    font-size: 1.8rem;
+    color: var(--text-color);
+    margin-bottom: 20px;
+    font-weight: 600;
+    border-bottom: 2px solid var(--card-border);
+    padding-bottom: 10px;
+    text-align: center; /* Centraliza o título h2 */
+}
+
+#fontes-pesquisa p {
+    font-size: 1rem;
+    color: var(--text-color);
+    opacity: 0.9;
+    margin-bottom: 25px;
+    line-height: 1.6;
+    text-align: center; /* Centraliza o parágrafo */
+}
+
+#fontes-pesquisa ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#fontes-pesquisa ul li {
+    margin-bottom: 15px;
+    padding: 15px;
+    background: var(--background-color);
+    border: 1px solid var(--card-border);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+#fontes-pesquisa ul li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-color: var(--button-background);
+}
+
+#fontes-pesquisa ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: color 0.3s ease;
+}
+
+#fontes-pesquisa ul li a:hover {
+    color: var(--button-background);
+}
+
+#fontes-pesquisa ul li a::before {
+    content: "🔗";
+    font-size: 1.2rem;
+}
+
 /* Controles */
 .controls {
     display: flex;
@@ -95,7 +201,6 @@ h1 {
     margin-bottom: 30px;
 }
 
-/* Barra de Pesquisa */
 .search-container {
     display: flex;
     width: 100%;
@@ -135,7 +240,6 @@ h1 {
     color: var(--button-hover-text);
 }
 
-/* Filtros */
 .filter-container {
     display: flex;
     flex-wrap: wrap;
@@ -186,13 +290,15 @@ h1 {
     font-size: 1.1rem;
     margin-bottom: 12px;
     color: var(--text-color);
+    text-align: center; /* Centraliza o título h3 */
 }
 
 .card p {
     font-size: 0.85rem;
     color: var(--text-color);
-    opacity: 0.8; /* Texto mais suave */
+    opacity: 0.8;
     margin-bottom: 15px;
+    text-align: center; /* Centraliza o parágrafo */
 }
 
 .card .description {
@@ -200,6 +306,7 @@ h1 {
     color: var(--text-color);
     margin-bottom: 15px;
     line-height: 1.4;
+    text-align: center; /* Centraliza a descrição */
 }
 
 /* Botões dentro do card */
@@ -215,7 +322,7 @@ h1 {
     flex: 1;
     text-align: center;
     padding: 8px 12px;
-    border-radius: 20px; /* Bordas mais arredondadas */
+    border-radius: 20px;
     font-size: 0.9rem;
     transition: all 0.3s ease;
 }
@@ -260,6 +367,7 @@ h1 {
     font-size: 1.5rem;
     color: var(--text-color);
     margin-bottom: 10px;
+    text-align: center; /* Centraliza o título h2 */
 }
 
 .donation-section p {
@@ -267,6 +375,7 @@ h1 {
     color: var(--text-color);
     opacity: 0.8;
     margin-bottom: 20px;
+    text-align: center; /* Centraliza o parágrafo */
 }
 
 .donation-note {
@@ -274,14 +383,14 @@ h1 {
     color: var(--text-color);
     opacity: 0.6;
     margin-top: 15px;
+    text-align: center; /* Centraliza a nota */
 }
 
-/* Botão de Doação */
 .donation-button {
     padding: 12px 24px;
     border: none;
     border-radius: 30px;
-    background: #ff4757; /* Cor chamativa */
+    background: #ff4757;
     color: #ffffff;
     font-size: 1rem;
     cursor: pointer;
@@ -292,7 +401,7 @@ h1 {
 }
 
 .donation-button:hover {
-    background: #e84118; /* Cor mais escura no hover */
+    background: #e84118;
     transform: translateY(-2px);
 }
 
@@ -321,6 +430,22 @@ h1 {
     .results-container {
         grid-template-columns: 1fr;
     }
+
+    #fontes-pesquisa {
+        padding: 20px;
+    }
+
+    #fontes-pesquisa h2 {
+        font-size: 1.5rem;
+    }
+
+    #fontes-pesquisa ul li {
+        padding: 12px;
+    }
+
+    #fontes-pesquisa ul li a {
+        font-size: 0.9rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -328,7 +453,7 @@ h1 {
         padding: 6px 12px;
         font-size: 0.8rem;
     }
-    
+
     .card {
         padding: 15px;
     }
@@ -341,5 +466,21 @@ h1 {
     .link-actions a,
     .link-actions .copy-url {
         width: 100%;
+    }
+
+    #fontes-pesquisa {
+        padding: 15px;
+    }
+
+    #fontes-pesquisa h2 {
+        font-size: 1.3rem;
+    }
+
+    #fontes-pesquisa ul li {
+        padding: 10px;
+    }
+
+    #fontes-pesquisa ul li a {
+        font-size: 0.85rem;
     }
 }
