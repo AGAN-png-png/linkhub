@@ -6,14 +6,14 @@
     <title>Links Hub</title>
     <link rel="stylesheet" href="style.css">
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-E1FESZWGSE"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E1FESZWGSE"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-  gtag('config', 'G-E1FESZWGSE');
-</script>
+      gtag('config', 'G-E1FESZWGSE');
+    </script>
 </head>
 <body>
     <div class="container">
@@ -30,25 +30,48 @@
             </p>
         </div>
         
-        <!-- Controles (Busca e Filtros) -->
-        <div class="controls">
-            <div class="search-container">
-                <input type="text" id="searchBar" placeholder="Qual serviço você procura?">
-                <button id="searchButton">🔍</button>
-            </div>
-            
-            <div class="filter-container">
-                <button class="filter-button active" data-category="all">Todos</button>
-                <button class="filter-button" data-category="tecnologia">Tecnologia</button>
-                <button class="filter-button" data-category="educacao">Educação</button>
-                <button class="filter-button" data-category="ferramentas">Ferramentas</button>
-                <button class="filter-button" data-category="design">Design</button>
-                <button class="filter-button" data-category="financas">Finanças</button>
-            </div>
+        <!-- Abas -->
+        <div class="tabs">
+            <button class="tab-button active" data-tab="links">Links</button>
+            <button class="tab-button" data-tab="fontes-pesquisa">Fontes de Pesquisas Acadêmicas</button>
         </div>
 
-        <!-- Resultados -->
-        <div id="results" class="results-container"></div>
+        <!-- Conteúdo das Abas -->
+        <div id="links" class="tab-content active">
+            <!-- Controles (Busca e Filtros) -->
+            <div class="controls">
+                <div class="search-container">
+                    <input type="text" id="searchBar" placeholder="Qual serviço você procura?">
+                    <button id="searchButton">🔍</button>
+                </div>
+                
+                <div class="filter-container">
+                    <button class="filter-button active" data-category="all">Todos</button>
+                    <button class="filter-button" data-category="tecnologia">Tecnologia</button>
+                    <button class="filter-button" data-category="educacao">Educação</button>
+                    <button class="filter-button" data-category="ferramentas">Ferramentas</button>
+                    <button class="filter-button" data-category="design">Design</button>
+                    <button class="filter-button" data-category="financas">Finanças</button>
+                </div>
+            </div>
+
+            <!-- Resultados -->
+            <div id="results" class="results-container"></div>
+        </div>
+
+        <div id="fontes-pesquisa" class="tab-content">
+            <h2>Fontes de Pesquisas Acadêmicas</h2>
+            <p>Aqui você encontrará links para fontes de pesquisas acadêmicas, como artigos científicos, revistas, e bases de dados.</p>
+            <ul>
+                <li><a href="https://scholar.google.com" target="_blank">Google Scholar</a></li>
+                <li><a href="https://www.ncbi.nlm.nih.gov/pubmed" target="_blank">PubMed</a></li>
+                <li><a href="https://www.sciencedirect.com" target="_blank">ScienceDirect</a></li>
+                <li><a href="https://www.jstor.org" target="_blank">JSTOR</a></li>
+                <li><a href="https://www.researchgate.net" target="_blank">ResearchGate</a></li>
+                <li><a href="https://www.academia.edu" target="_blank">Academia.edu</a></li>
+            </ul>
+        </div>
+    </div>
 
     <!-- Scripts -->
     <script src="script.js"></script>
