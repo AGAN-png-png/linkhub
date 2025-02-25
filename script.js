@@ -39,7 +39,7 @@ const links = [
     { 
         title: "MORE", 
         url: "https://more.ufsc.br/inicio", 
-        category: "educacão", 
+        category: "educacao", 
         description: "Ferramenta para gerar referências bibliográficas de acordo com normas acadêmicas, como ABNT e APA." 
     },
     { 
@@ -87,7 +87,7 @@ const links = [
     { 
         title: "BibGuru", 
         url: "https://app.bibguru.com/p/aea27f1b-f09c-4a91-add6-bd42116546ce", 
-        category: "educacão", 
+        category: "educacao", 
         description: "O BibGuru é uma ferramenta online que ajuda a criar citações e bibliografias automaticamente em diversos formatos (como APA, MLA, Chicago, entre outros)." 
     }
 ];
