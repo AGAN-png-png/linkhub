@@ -235,3 +235,20 @@ document.addEventListener('click', (e) => {
 // ========== INICIALIZAÇÃO ==========
 displayLinks(links); // Exibir todos os links inicialmente
 setupPixDonation(); // Configurar a seção de doações via Pix
+
+// ========== SISTEMA DE ABAS ==========
+const tabButtons = document.querySelectorAll('.tab-button');
+const tabContents = document.querySelectorAll('.tab-content');
+
+tabButtons.forEach(button => {
+    button.addEventListener('click', function() {
+        // Remove a classe 'active' de todos os botões e conteúdos
+        tabButtons.forEach(btn => btn.classList.remove('active'));
+        tabContents.forEach(content => content.classList.remove('active'));
+
+        // Adiciona a classe 'active' ao botão clicado e ao conteúdo correspondente
+        const tabId = this.getAttribute('data-tab');
+        this.classList.add('active');
+        document.getElementById(tabId).classList.add('active');
+    });
+});
