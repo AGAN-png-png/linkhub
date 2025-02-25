@@ -39,7 +39,7 @@ const links = [
     { 
         title: "MORE", 
         url: "https://more.ufsc.br/inicio", 
-        category: "educacao", 
+        category: "educacão", 
         description: "Ferramenta para gerar referências bibliográficas de acordo com normas acadêmicas, como ABNT e APA." 
     },
     { 
@@ -83,6 +83,12 @@ const links = [
         url: "https://www.capcut.com/pt-br/login?enter_from=log_out&current_page=work_space", 
         category: "ferramentas", 
         description: "O CapCut é um aplicativo de edição de vídeos gratuito e intuitivo." 
+    },
+    { 
+        title: "BibGuru", 
+        url: "https://app.bibguru.com/p/aea27f1b-f09c-4a91-add6-bd42116546ce", 
+        category: "educacão", 
+        description: "O BibGuru é uma ferramenta online que ajuda a criar citações e bibliografias automaticamente em diversos formatos (como APA, MLA, Chicago, entre outros)." 
     }
 ];
 
