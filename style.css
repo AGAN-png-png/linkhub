@@ -353,6 +353,290 @@ h1 {
     border-color: var(--button-background);
 }
 
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --card-background: #ffffff;
+    --card-border: #ddd;
+    --button-background: #000000;
+    --button-text: #ffffff;
+    --button-hover-background: #ffffff;
+    --button-hover-text: #000000;
+}
+
+[data-theme="dark"] {
+    --background-color: #121212;
+    --text-color: #ffffff;
+    --card-background: #1e1e1e;
+    --card-border: #333;
+    --button-background: #ffffff;
+    --button-text: #000000;
+    --button-hover-background: #000000;
+    --button-hover-text: #ffffff;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    text-align: center;
+}
+
+.header {
+    margin-bottom: 30px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    margin: 0;
+    text-align: center;
+}
+
+.header p {
+    font-size: 1rem;
+    color: var(--text-color);
+    opacity: 0.8;
+    max-width: 800px;
+    margin: 0 auto 20px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    padding: 10px 20px;
+    border: none;
+    background: var(--card-background);
+    color: var(--text-color);
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.tab-button.active {
+    background: var(--button-background);
+    color: var(--button-text);
+}
+
+.tab-button:hover {
+    background: var(--button-hover-background);
+    color: var(--button-hover-text);
+}
+
+.tab-content {
+    display: none;
+    padding: 30px;
+    background: var(--card-background);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Estilo Clean para "Canais Úteis" - Versão Final */
+#canais-uteis {
+    padding: 2.5rem 1rem;
+    margin: 3rem auto;
+    max-width: 800px;
+}
+
+#canais-uteis h2 {
+    font-size: 1.7rem;
+    color: var(--text-color);
+    margin: 0 auto 1.8rem;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+#canais-uteis h2::after {
+    content: '';
+    position: absolute;
+    bottom: -0.8rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 2px;
+    background: var(--button-background);
+    opacity: 0.3;
+    transition: width 0.3s ease;
+}
+
+#canais-uteis p.introducao {
+    font-size: 1.05rem;
+    color: var(--text-color);
+    opacity: 0.85;
+    text-align: center;
+    margin: 0 auto 2.8rem;
+    line-height: 1.65;
+    max-width: 600px;
+    padding: 0 1rem;
+}
+
+#canais-uteis ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 1.8rem;
+}
+
+#canais-uteis ul li {
+    padding: 1.8rem;
+    background: var(--background-color);
+    border: 1px solid var(--card-border);
+    border-radius: 8px;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+#canais-uteis ul li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    border-color: var(--button-background);
+}
+
+#canais-uteis ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+    display: block;
+    transition: all 0.25s ease;
+    margin: 0 auto 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    position: relative;
+    padding-bottom: 0.6rem;
+    width: fit-content;
+}
+
+#canais-uteis ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 45px;
+    height: 2px;
+    background: var(--button-background);
+    opacity: 0.35;
+    transition: all 0.3s ease;
+}
+
+#canais-uteis ul li a:hover {
+    color: var(--button-background);
+    letter-spacing: 1px;
+}
+
+#canais-uteis ul li a:hover::after {
+    width: 65px;
+    opacity: 0.7;
+}
+
+#canais-uteis ul li p.descricao-canal {
+    font-size: 0.92rem;
+    color: var(--text-color);
+    opacity: 0.78;
+    margin: 1.4rem auto 0;
+    line-height: 1.6;
+    font-weight: 300;
+    max-width: 520px;
+    padding-top: 1rem;
+    position: relative;
+}
+
+#canais-uteis ul li p.descricao-canal::before {
+    content: '';
+    display: block;
+    width: 55px;
+    height: 1px;
+    background: var(--card-border);
+    margin: 0 auto 1.2rem;
+    opacity: 0.25;
+}
+
+/* Responsividade */
+@media (max-width: 800px) {
+    #canais-uteis {
+        padding: 2rem 1.2rem;
+        margin: 2.5rem auto;
+    }
+    
+    #canais-uteis ul {
+        gap: 1.5rem;
+    }
+    
+    #canais-uteis ul li {
+        padding: 1.6rem;
+    }
+}
+
+@media (max-width: 680px) {
+    #canais-uteis h2 {
+        font-size: 1.5rem;
+    }
+    
+    #canais-uteis ul li a {
+        font-size: 1.05rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #canais-uteis {
+        padding: 1.8rem 1rem;
+    }
+    
+    #canais-uteis ul li {
+        padding: 1.4rem;
+    }
+    
+    #canais-uteis ul li a {
+        font-size: 1rem;
+    }
+}
+
 /* Seção de Doações */
 .donation-section {
     margin-top: 40px;
