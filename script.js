@@ -92,7 +92,7 @@ const links = [
     }
 
     { 
-        title: "Consensus", 
+        title: "Consensus ia", 
         url: "https://consensus.app/search/", 
         category: "educacao", 
         description: "O Consensus é uma plataforma online que utiliza inteligência artificial para ajudar usuários a encontrar respostas baseadas em evidências científicas. Ele permite que pesquisadores, estudantes e profissionais busquem informações em milhões de artigos acadêmicos de forma rápida e eficiente." 
