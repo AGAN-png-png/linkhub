@@ -90,7 +90,6 @@ const links = [
         category: "educacao", 
         description: "O BibGuru é uma ferramenta online que ajuda a criar citações e bibliografias automaticamente em diversos formatos (como APA, MLA, Chicago, entre outros)." 
     },
-
     { 
         title: "Consensus ia", 
         url: "https://consensus.app/search/", 
