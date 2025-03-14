@@ -95,7 +95,30 @@ const links = [
         url: "https://consensus.app/search/", 
         category: "educacao", 
         description: "O Consensus é um mecanismo de busca inteligente que utiliza IA para analisar e sintetizar informações de milhares de artigos científicos e estudos revisados por pares." 
+    },
+
+    { 
+        title: "Mendeley", 
+        url: "https://www.mendeley.com/", 
+        category: "educacao", 
+        description: "O Mendeley é uma plataforma amplamente utilizada para gerenciamento de referências e organização de pesquisas acadêmicas." 
+    },
+
+    { 
+        title: "Mettzer", 
+        url: "https://www.mettzer.com/", 
+        category: "educacao", 
+        description: "O Mettzer é uma plataforma digital brasileira voltada para a elaboração e formatação de trabalhos acadêmicos, como TCCs, monografias, dissertações e teses. Ele oferece ferramentas que automatizam a formatação de textos de acordo com as normas da ABNT (Associação Brasileira de Normas Técnicas) e outras diretrizes acadêmicas." 
+    },
+
+     { 
+        title: "FastFormat", 
+        url: " https://fastformat.co/", 
+        category: "educacao", 
+        description: "O FastFormat é uma ferramenta online brasileira especializada na formatação automática de trabalhos acadêmicos, como TCCs, monografias, artigos científicos e outros documentos, seguindo as normas da ABNT (Associação Brasileira de Normas Técnicas) e outros padrões." 
     }
+
+   
 ];
 
 // Seleciona o botão de alternância de tema
