@@ -118,6 +118,14 @@ const links = [
         description: "O FastFormat é uma ferramenta online brasileira especializada na formatação automática de trabalhos acadêmicos, como TCCs, monografias, artigos científicos e outros documentos, seguindo as normas da ABNT (Associação Brasileira de Normas Técnicas) e outros padrões." 
     }
 
+    ,
+
+     { 
+        title: "NotebookLM", 
+        url: " https://notebooklm.google.com/", 
+        category: "educacao", 
+        description: "O NotebookLM é uma ferramenta que permite carregar textos, resumir conteúdos, gerar ideias e responder perguntas com base no material fornecido, sendo útil para pesquisa acadêmica, produção de conteúdo e gestão de informações." 
+    }
    
 ];
 
